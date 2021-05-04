@@ -28,10 +28,13 @@ namespace ODataConsoleApplication
               });
             // CreateMyCar(context);
             //QueryExamples.GetTopRecords(context);
-            //QueryExamples.GetCustomerTopRecords(context);
-            QueryExamples.CreateCustomer(context);
+            //QueryExamples.FilterLinqSyntax(context);
+            QueryExamples.CreateJournal(context);
+           // QueryExamples.GetCustomerTopRecords(context);
+            //QueryExamples.CreateCustomer2(context);
             //QueryExamples.ReadLegalEntities(context);
             Console.ReadLine();
+            
         }
             void Func1()
         {

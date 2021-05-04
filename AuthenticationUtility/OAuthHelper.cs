@@ -22,13 +22,14 @@ namespace AuthenticationUtility
         public static string GetAuthenticationHeader(bool useWebAppAuthentication = true)
         {
             string aadTenant = ClientConfiguration.Default.ActiveDirectoryTenant;
-            string aadClientAppId = "c76654db-522a-45fc-8a36-4ec4ad085cdc";//ClientConfiguration.Default.ActiveDirectoryClientAppId;
-            string aadClientAppSecret = "ah_n7.S.C2ZcV_-a~.Y3gGO32-f23.n7p5";// ClientConfiguration.Default.ActiveDirectoryClientAppSecret;
+            string aadClientAppId = "af709717-85ce-4d1d-8827-f204c3892db4";//ClientConfiguration.Default.ActiveDirectoryClientAppId;
+            string aadClientAppSecret = "kmygON9o1T95Wnl-d7-Tqej_kLqC1i4..x";// ClientConfiguration.Default.ActiveDirectoryClientAppSecret;
             string aadResource = "https://kidc-sandbox.sandbox.operations.dynamics.com";// ClientConfiguration.Default.ActiveDirectoryResource;
-           // string Authority = String.Format(CultureInfo.InvariantCulture, aadTenant);
+                                  
+                  // string Authority = String.Format(CultureInfo.InvariantCulture, aadTenant);
 
-            //AuthenticationContext authenticationContext = new AuthenticationContext("https://login.windows.net/kidcsa.onmicrosoft.com", false);
-            AuthenticationContext authenticationContext = new AuthenticationContext("https://sts.windows.net/KIDCSA.onmicrosoft.com", false);
+            AuthenticationContext authenticationContext = new AuthenticationContext("https://login.windows.net/kidcsa.onmicrosoft.com", false);
+            //AuthenticationContext authenticationContext = new AuthenticationContext("https://sts.windows.net/KIDCSA.onmicrosoft.com", false);
             AuthenticationResult authenticationResult;
 
             if (useWebAppAuthentication)
