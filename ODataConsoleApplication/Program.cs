@@ -29,9 +29,10 @@ namespace ODataConsoleApplication
             // CreateMyCar(context);
             //QueryExamples.GetTopRecords(context);
             //QueryExamples.FilterLinqSyntax(context);
-            QueryExamples.CreateJournal(context);
+            //QueryExamples.CreateJournal(context);
            // QueryExamples.GetCustomerTopRecords(context);
             //QueryExamples.CreateCustomer2(context);
+            QueryExamples.UpdateCustomer(context);
             //QueryExamples.ReadLegalEntities(context);
             Console.ReadLine();
             
@@ -56,7 +57,7 @@ namespace ODataConsoleApplication
 
             //QueryExamples.ReadLegalEntities(context);
             // QueryExamples.GetInlineQueryCount(context);
-            QueryExamples.GetTopRecords(context);
+           // QueryExamples.GetTopRecords(context);
             // QueryExamples.FilterSyntax(context);
             // QueryExamples.FilterLinqSyntax(context);
             // QueryExamples.SortSyntax(context);
